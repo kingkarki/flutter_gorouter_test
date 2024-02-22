@@ -13,12 +13,12 @@ GoRouter router = GoRouter(
   initialLocation: AppRoutes.home.path,
   routes: <RouteBase>[
     GoRoute(
-        path: AppRoutes.home.path,
-        name: AppRoutes.home.name,
-        builder: (context, state) {
-          return const HomeScreen();
-        },
-        routes: []),
+      path: AppRoutes.home.path,
+      name: AppRoutes.home.name,
+      builder: (context, state) {
+        return const HomeScreen();
+      },
+    ),
     GoRoute(
       path: AppRoutes.login.path,
       name: AppRoutes.login.name,
