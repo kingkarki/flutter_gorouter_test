@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:gorouter/routes/route_constant.dart';
+import 'package:gorouter/routes/app_routes.dart';
 
 class UserProductScreen extends StatelessWidget {
   const UserProductScreen({super.key});
@@ -21,19 +21,21 @@ class UserProductScreen extends StatelessWidget {
           ),
           ElevatedButton(
             onPressed: () {
-              context.goNamed(RouteConstants.product);
+              context.goNamed(AppRoutes.product.name);
             },
             child: const Text('Product'),
           ),
           ElevatedButton(
             onPressed: () {
-              context.goNamed(RouteConstants.home);
+              context.goNamed(AppRoutes.home.name);
             },
             child: const Text('Home'),
           ),
           ElevatedButton(
             onPressed: () {
-              context.goNamed(RouteConstants.profileWithoutId);
+              context.goNamed(
+                AppRoutes.profileWithoutId.name,
+              );
             },
             child: const Text('Profile Without ID'),
           ),
